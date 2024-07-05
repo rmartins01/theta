@@ -2,26 +2,10 @@ version: '3.8'
 
 services:
   theta:
-    image: 'postgres:12.2-alpine'
-    build:
-      context: .
-    container_name: theta
-    depends_on:
-      - db
-    environment:
-      - POSTGRES_USER=postgress
-      - POSTGRES_PASSWORD=postgress
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/theta
-      - SPRING_DATASOURCE_USERNAME=postgress
-      - SPRING_DATASOURCE_PASSWORD=postgress
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
-
-  db:
     image: postgres
-    container_name: db
     environment:
-      - POSTGRES_USER=postgress
-      - POSTGRES_PASSWORD=postgress
-      - POSTGRES_DB=theta
+      POSTGRES_PASSWORD: postgress
+      POSTGRES_USER: postgress
+      POSTGRES_DB: theta
     ports:
       - 5432:5432

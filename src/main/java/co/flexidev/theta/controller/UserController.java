@@ -37,7 +37,7 @@ public class UserController {
     public ResponseEntity<User> getUserById(@PathVariable("id") Long userId){
         User user = userService.getUserById(userId);
         return new ResponseEntity<>(user, HttpStatus.OK);
-    }
+    } 
 
     // Build Get All Users REST API
     // http://localhost:8080/api/users
