@@ -1,12 +1,12 @@
-package co.flexidev.theta.service;
+package br.com.theta.service;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import co.flexidev.theta.model.User;
-import co.flexidev.theta.repository.UserRepository;
+import br.com.theta.model.User;
+import br.com.theta.repository.UserRepository;
 import lombok.AllArgsConstructor;
 
 @Service

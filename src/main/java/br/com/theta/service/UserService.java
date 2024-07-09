@@ -1,8 +1,8 @@
-package co.flexidev.theta.service;
+package br.com.theta.service;
 
 import java.util.List;
 
-import co.flexidev.theta.model.User;
+import br.com.theta.model.User;
 
 public interface UserService {
 

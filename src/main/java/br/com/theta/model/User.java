@@ -1,4 +1,4 @@
-package co.flexidev.theta.model;
+package br.com.theta.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,4 +28,6 @@ public class User {
     private String lastName;
     @Column(nullable = false, unique = true)
     private String email;
+
+    
 }

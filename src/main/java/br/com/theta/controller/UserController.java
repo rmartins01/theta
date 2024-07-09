@@ -1,4 +1,4 @@
-package co.flexidev.theta.controller;
+package br.com.theta.controller;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.flexidev.theta.model.User;
-import co.flexidev.theta.service.UserService;
+import br.com.theta.model.User;
+import br.com.theta.service.UserService;
 import lombok.AllArgsConstructor;
 
 @RestController
